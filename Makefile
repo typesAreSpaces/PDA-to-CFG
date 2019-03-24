@@ -12,10 +12,6 @@ all: main
 $(ODIR)/%.o: $(SDIR)/%.cpp $(DEPS)
 	$(CC) -g -c -o $@ $(FLAGS) $<
 
-$(OBJS): $(SRC) $(HEADERS)
-	$(CC) -c $(SRC) $(FLAGS)
-	mv *.o obj/
-
 src/parser.tab.c include/parser.tab.h: src/parser.y
 	bison -d src/parser.y		
 	mv parser.tab.c src/parser.tab.c
