@@ -1,6 +1,6 @@
 # PDA-to-CFG
 
-This code implements the algorithm in Introduction to the Theory of Computation by Michael Sipser.
+This code implements the algorithm in Introduction to the Theory of Computation by Michael Sipser to conver a Push Down Automata (PDA) to a Context Free Grammar (CFG.
 
 ## Dependencies
   - Branch master:
