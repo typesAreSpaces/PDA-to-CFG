@@ -1,0 +1,15 @@
+q_1, q_2, q_3, q_4, q_5, q_6, q_7 | 
+a, b, c | 
+$, a | 
+q_4, q_7 | 
+q_1, epsilon, epsilon -> q_2, $;
+q_2, epsilon, epsilon -> q_3, epsilon;
+q_3, b, a -> q_3, epsilon;
+q_3, epsilon, $ -> q_4, epsilon;
+q_4, c, epsilon -> q_4, epsilon;
+q_2, a, epsilon -> q_2, a;
+q_2, epsilon, epsilon -> q_5, epsilon;
+q_5, b, epsilon -> q_5, epsilon;
+q_5, epsilon, epsilon -> q_6, epsilon;
+q_6, c, a -> q_6, epsilon;
+q_6, epsilon, $ -> q_7, epsilon;
