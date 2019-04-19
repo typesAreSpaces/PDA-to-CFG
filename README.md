@@ -34,7 +34,7 @@ for the TRANSITION rule is:
 - The fifth ID refers to the next symbol at the top of the stack
 
 If you want to include an epsilon transition in your PDA you should
-just the string 'epsilon'.
+just add the string 'epsilon'.
 
 ## Examples of PDA Encodings
 
