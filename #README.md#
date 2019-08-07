@@ -64,7 +64,7 @@ q_5, epsilon, epsilon -> q_6, epsilon;
 q_6, c, a -> q_6, epsilon;
 q_6, epsilon, $ -> q_7, epsilon;
 
-## How to run examples
+##  Examples
 - pdatocfg < pdas/pda1.txt
 - pdatocfg < pdas/pda2.txt
 
