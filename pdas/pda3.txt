@@ -1,0 +1,11 @@
+q1, q2, q3, q4 | 
+0, 1 | 
+$, 0, 1 | 
+q4 | 
+q1, epsilon, epsilon -> q2, $;
+q2, 0, epsilon -> q2, 0;
+q2, 1, epsilon -> q2, 1;
+q2, epsilon, epsilon -> q3, epsilon;
+q3, 0, 0 -> q3, epsilon;
+q3, 1, 1 -> q3, epsilon;
+q3, epsilon, $ -> q4, epsilon;
