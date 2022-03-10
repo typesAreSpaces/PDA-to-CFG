@@ -7,7 +7,7 @@ DEPS  = $(wildcard $(IDIR)/*.h) include/util.h include/parser.tab.h
 FLAGS = -Wall -I$(IDIR)/ -std=c++11
 CC    = g++
 
-all: main
+all: pdatocfg
 
 $(ODIR)/%.o: $(SDIR)/%.cpp $(DEPS)
 	$(CC) -g -c -o $@ $(FLAGS) $<
@@ -27,9 +27,9 @@ obj/parser.tab.o: src/parser.tab.c
 obj/lex.yy.o: src/lex.yy.c
 	$(CC) -g -c -o $@ $(FLAGS) $<
 
-main: obj/parser.tab.o obj/lex.yy.o $(OBJS)
+pdatocfg: obj/parser.tab.o obj/lex.yy.o $(OBJS)
 	$(CC) -o $@ $^ -Wall $(FLAGS)
 
 .PHONY: clean
 clean:
-	rm -rf $(ODIR)/* main include/parser.tab.h src/parser.tab.c src/lex.yy.c
+	rm -rf $(ODIR)/* pdatocfg include/parser.tab.h src/parser.tab.c src/lex.yy.c
